@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+  
+  body {
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#2895d4,#d888b4);
+  }
+  
+  body.correct {
+    background:#169b28;
+  }
+  
+  body.wrong {
+    background: #f33737;
+  }
+  p{
+      display: flex;
+  }
+  
+  .container {
+    width: 600px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 0 0 10px 2px;
+    display: block;
+  }
+  
+  .btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .btn {
+    
+    border: 1px solid #2895d4;
+    background-color: linear-gradient(to right,#2895d4,#d888b4);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+  }
+  
+  .btn:hover {
+    border-color: black;
+  }
+  
+  .btn.correct {
+    background:#169b28;
+    color: black;
+  }
+  
+  .btn.wrong {
+    background: #f33737;
+  }
+  
+  
+  .start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  .modals{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      padding:40px;
+    align-items: center;
+    justify-items: center;
+    display:none;
+    height:500px;
+    height:500px;
+    background:#fff;
+    border:10px solid #000;
+
+}
+.modals h1{
+    text-align:center;
+    font-weight:700;
+}
+
+.modals .btn{
+    border: 1px solid #2895d4;
+    background-color: linear-gradient(to right,#2895d4,#d888b4);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+    display:block;
+    align-items: center;
+}
+.modals .restart-btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top:20px;
+}
+.modals .btn:hover {
+    border-color: black;
+  }
+  
+.modals.active{
+    display:block;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  
+  <title>Quiz App</title>
+</head>
+<body>
+    
+  <div class="container" id="container1">
+   <p>Seconds Left: <div class="time001" id="time001">100</div></p>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+   
+  </div>
+  <div id="modal" class='modals'>
+    <h1>End of the Quiz</h1>
+    Total no of questions : 4
+    <h2>correct : </h2><div class="cor" id='cor'></div>
+    <h2>wrong :</h2> <div class="wro" id='wro'></div>
+    <button id="restart-btn" class="restart-btn btn hide">Restart</button>
+
+ </div>
+ <div id="modals" class='modals'>
+  <h1>Out Of Time</h1>
+  <button id="try-btn" class="restart-btn btn hide">Try Again</button>
+
+</div>
+
+</body>
+</html>
